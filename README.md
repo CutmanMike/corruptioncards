@@ -63,3 +63,45 @@ Adds a custom image for an already defined monster group. The image must be 68x1
 
 Adds a custom image for the monster. Corruption Cards will try to grab one from the sprite currently used in the world, but certain actors maybe too large or look wrong when displayed on a card. This allows you to manually change it to `graphic`. If the monster is part of a group, it will only be displayed for cards that have `usespecies` disabled.
 
+# Examples
+
+A simple CCARDS lump that adds a custom card you've made.
+
+```
+addcard CCard_MyCustomCard
+```
+
+A CCARDS lump that removes all the previous cards and adds some random favourites.
+
+```
+clearcards
+addcard CCard_ExtraCurses
+addcard CCard_MutatingCard
+addcard CCard_SpawnIllusions
+addcard CCard_RescueMission
+addcard CCard_Specialists
+addcard CCard_DuplicationCurseMonster
+addcard CCard_LethalityCurseMonster
+addcard CCard_ResurrectionCurseMonster
+addcard CCard_ClownCarMonster
+addcard CCard_MirrorCurseMonster
+```
+
+A CCARDS lump that sets up some custom monster groups for a monster replacement mod.
+
+```
+monstergroup "Zombies", PistolZombieMan, ChainsawZombieMan, RifleZombieMan
+monstergroup "Imps", MyImp, BigImp, FireImp
+monstergroup "Floaty Boys", Cacodemon, NastyCacodemon, CacodemonBoss
+```
+
+Optional images for the same imaginary mod above and their groups.
+
+```
+monstergroupsprite "Zombies", CCGZOMB
+monstergroupsprite "Imps", CCGIMPS
+monstergroupsprite "Floaty Boys", CCGFLOAT
+
+monstercardsprite "FireImp", FIMPCARD
+monstercardsprite "DarthMastermind", MSTRCARD
+```
