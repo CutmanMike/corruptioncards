@@ -2,7 +2,7 @@
 
 The CCARDS lump for Corruption Cards customizes decks, card generation and more. It's useful for getting your own custom cards into the game, altering how cards are generated for your custom monsters or tweaking your Corruption Cards experience beyond what is offered in the options menu.
 
-Simply create a new lump called CCARDS and add it to the pk3/wad of the mod you want to add it to. From there you can use any of the following:
+Simply create a new lump called CCARDS and add it to the pk3/wad of the mod you want to add customization to. From there you can use any of the following:
 
 ## Deck Manipulation
 
