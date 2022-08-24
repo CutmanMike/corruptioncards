@@ -63,6 +63,10 @@ Adds a custom image for an already defined monster group. The image must be 68x1
 
 Adds a custom image for the monster. Corruption Cards will try to grab one from the sprite currently used in the world, but certain actors maybe too large or look wrong when displayed on a card. This allows you to manually change it to `graphic`. If the monster is part of a group, it will only be displayed for cards that have `usespecies` disabled.
 
+### `ungroup`, `groupname`
+
+Removes an existing Monster Group. Useful for removing the default groups defined for vanilla Doom monsters.
+
 # Examples
 
 A simple CCARDS lump that adds a custom card you've made.
